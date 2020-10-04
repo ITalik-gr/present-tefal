@@ -157,8 +157,8 @@ Main Area
 	position: absolute;
 	top: 150px;
 	left: 0;
-	/* display: none; */
 	z-index: 1;
+	width: 95%;
 }
 .main-area__body {
 	padding-top: 66px;
@@ -242,17 +242,22 @@ Main Area
 	background: #36742c;
 	padding-bottom: 36px;
 	padding-top: 40px;
+	position: relative;
+	z-index: 3;
 }
 .footer__top {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.footer__bottom {
-
+.footer__dashed {
+	position: absolute;
+	top: 1px;
+	left: 0;
 }
 .footer__social img{
-	width: 100px;
+	width: 50px;
+	cursor: pointer;
 }
 .footer__phone {
 	color: #ffffff;
