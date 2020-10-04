@@ -150,6 +150,9 @@ Main Area
 	top: 0px;
 	width: 800px;
 }
+.wrap {
+	min-height: 100vh;
+}
 .main-area {
 	background: url('../img/map.png') no-repeat;
 	background-size: cover;
@@ -160,7 +163,7 @@ Main Area
 	align-items: flex-end;
 	position: relative;
 	padding: 0px 110px 60px 110px;
-	min-height: 100vh;
+
 }
 .main-area__bg-line {
 	position: absolute;
@@ -170,7 +173,7 @@ Main Area
 	width: 90%;
 }
 .main-area__body {
-	padding-top: 66px;
+	padding-top: 21px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -721,19 +724,21 @@ Responsive
   padding: 15px 30px;
 }
 .content-image img {
-	width: 170px;
+  width: 150px;
+
 }
 .content-card {
-	font-size: 13px;
+	font-size: 11px;
 }
 .content-descr {
-	font-size: 14px;
-	padding: 25px 40px;
+	font-size: 13px;
+	padding: 25px 10px;
 }
 .content-descr span {
-	font-size: 20px;
+	font-size: 19px;
 }
 .content-card img {
-	width: 60px;
+	width: 55px;
+  margin-right: 5px;
 }
 }
