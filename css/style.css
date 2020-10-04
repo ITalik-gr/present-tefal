@@ -1,0 +1,336 @@
+/*
+© Copyright 2020 by Vladislav Zhylenko
+** - Default CSS
+** - Main Area
+** - Left Instruction
+** - Form Area
+** - Responsive
+*/
+
+/*================================================
+Default CSS
+=================================================*/
+@font-face {
+	font-family: 'friquer';
+	src: url(../fonts/agfriquerc.otf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	/* background: url('img/map.png') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center; */
+}
+
+img {
+ 	max-width: 100%;
+  	height: auto;
+}
+
+a {
+  	text-decoration: none;
+  	outline: 0 !important;
+  	color: black;
+}
+
+p{
+	margin: 0;
+}
+
+button {
+  	outline: 0 !important;
+}
+
+li{
+	list-style-type: none;
+}
+
+ul{
+	margin: 0;
+	padding:0;
+}
+
+strike{
+	color: #989898;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+img::selection {
+  	background: #585858;
+  	color: white;
+}
+
+a::selection {
+	background: #585858;
+  	color: white;
+}
+
+p::selection{
+	background: #585858;
+  	color: white;
+}
+
+button::selection {
+	background: #585858;
+  	color: white;
+}
+
+li::selection{
+	background: #585858;
+  	color: white;
+}
+
+input::selection{
+	background: #585858;
+  	color: white;
+}
+
+textarea::selection{
+	background: #585858;
+  	color: white;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.mtb-70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+/*================================================
+Main Area
+=================================================*/
+
+.main-area {
+	background: url('../img/map.png') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	padding: 0px 110px 60px 110px;
+}
+.main-area__body {
+	padding-top: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.main-area__title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-shadow: 0 6px 12px rgba(25, 23, 28, 0.56);
+	color: #ffffff;
+	font-family: "AG Friquer - Roman";
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	z-index: 3;
+}
+.main-area__title__logo {
+	margin-top: 48px;
+	width: 360px;
+}
+.main-area__title span {
+	text-shadow: 0 6px 18px rgba(1, 57, 33, 0.75);
+	color: #fff200;
+	font-size: 90px;
+	line-height: 103.99px;
+}
+.main-area__main-present{ 
+	margin-top: -20px;
+}
+.main-area__main-present img {
+	max-width: 850px;
+}
+.main-area__right-block {
+	position: absolute;
+	right: 30px;
+	bottom: 25px;
+}
+.main-area__atb {
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 35px;
+	text-transform: uppercase;
+	display: flex;
+  justify-content: center;
+	align-items: flex-end;
+	text-align: right;
+}
+.main-area__atb img {
+	margin-left: 10px;
+	max-width: 100px;
+}
+.main-area__left-block {
+	position: absolute;
+	left: 30px;
+	bottom: 25px;
+}
+.main-area__logos {
+	display: flex;
+	flex-direction: column;
+}
+.main-area__logos img {
+	width: 300px;
+}
+.main-area__logos img:last-child {
+	margin-bottom: 0;
+}
+/*================================================
+Left Instruction
+=================================================*/
+
+.instr-area{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 100px;
+}
+
+.instr-area .instr-block{
+	background: #36742c;
+	border: dashed 1px #ffffff;
+	display: flex;
+	flex-direction: row;
+}
+
+.instr-area .instr-block img{
+	max-width: 160px;
+}
+
+.instr-area .instr-block p{
+	font-family: friquer;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+/*================================================
+Form Area
+=================================================*/
+
+.form-area{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: #464451;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-area .form-block{
+	position: relative;
+	width: 90%;
+	min-width: 270px;
+	max-width: 350px;
+}
+
+.form-area .form-block form{
+	display: flex;
+	flex-direction: column;
+}
+
+.form-area .form-block form input{
+	outline: none;
+	border: 1px solid #293133;
+	border-radius: 100px;
+	background: #293133;
+	font-family: Arial;
+	padding: 10px;
+	font-size: 20px;
+	color: #fafafa;
+	transition: .2s;
+	margin: 10px 0;
+}
+
+.form-area .form-block form input:focus{
+	background: #23282B;
+}
+
+.form-area .form-block form button{
+	outline: none;
+	border: none;
+	border-radius: 100px;
+	background: #62639B;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 20px;
+	color: #fafafa;
+	transition: .2s;
+	margin: 10px 0;
+}
+
+.form-area .form-block form button:hover{
+	background: #957B8D;
+}
+
+.form-area .form-block form button:active{
+	transform: scale(.95);
+}
+
+.result-text{
+	font-size: 20px;
+	color: red;
+	font-family: Arial;
+}
+
+/*================================================
+Responsive
+=================================================*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}
