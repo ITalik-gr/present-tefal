@@ -548,4 +548,8 @@ Responsive
 .footer__top {
 	align-items: end;
 }
+.main-area__logos {
+	margin-bottom: 10px;
+	flex-direction: column;
+}
 }
