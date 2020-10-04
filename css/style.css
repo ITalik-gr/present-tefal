@@ -134,6 +134,13 @@ textarea::selection{
 .container {
 	margin: 0px 100px auto;
 }
+
+
+/*================================================
+First page
+=================================================*/
+
+
 /*================================================
 Main Area
 =================================================*/
@@ -201,6 +208,10 @@ Main Area
 .main-area__main-present img {
 	max-width: 900px
 }
+
+/*================================================
+Right-Block
+=================================================*/
 .main-area__right-block {
 	position: absolute;
 	right: 30px;
@@ -221,6 +232,13 @@ Main Area
 	margin-left: 15px;
 	max-width: 100px;
 }
+
+
+/*================================================
+Left-Block
+=================================================*/
+
+
 .main-area__left-block {
 	position: absolute;
 	left: 30px;
@@ -238,6 +256,10 @@ Main Area
 	margin-bottom: 0;
 }
 
+
+/*================================================
+Footer
+=================================================*/
 
 
 .footer {
@@ -283,116 +305,29 @@ Main Area
 .footer__descr p {
 
 }
-/*================================================
-Left Instruction
-=================================================*/
 
-.instr-area{
-	display: none;
-	position: absolute;
-	left: 0;
-	bottom: 100px;
-}
-
-.instr-area .instr-block{
-	background: #36742c;
-	border: dashed 1px #ffffff;
-	display: flex;
-	flex-direction: row;
-}
-
-.instr-area .instr-block img{
-	max-width: 160px;
-}
-
-.instr-area .instr-block p{
-	font-family: friquer;
-	color: #ffffff;
-	font-size: 20px;
-}
 
 /*================================================
-Form Area
+	Second page
 =================================================*/
 
-.form-area{
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background: #464451;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.form-area .form-block{
-	position: relative;
-	width: 90%;
-	min-width: 270px;
-	max-width: 350px;
-}
-
-.form-area .form-block form{
-	display: flex;
-	flex-direction: column;
-}
-
-.form-area .form-block form input{
-	outline: none;
-	border: 1px solid #293133;
-	border-radius: 100px;
-	background: #293133;
-	font-family: Arial;
-	padding: 10px;
-	font-size: 20px;
-	color: #fafafa;
-	transition: .2s;
-	margin: 10px 0;
-}
-
-.form-area .form-block form input:focus{
-	background: #23282B;
-}
-
-.form-area .form-block form button{
-	outline: none;
-	border: none;
-	border-radius: 100px;
-	background: #62639B;
-	font-family: Arial;
-	font-weight: bold;
-	padding: 10px;
-	font-size: 20px;
-	color: #fafafa;
-	transition: .2s;
-	margin: 10px 0;
-}
-
-.form-area .form-block form button:hover{
-	background: #957B8D;
-}
-
-.form-area .form-block form button:active{
-	transform: scale(.95);
-}
-
-.result-text{
-	font-size: 20px;
-	color: red;
-	font-family: Arial;
-}
-
-
+/*================================================
+	Wrapper
+=================================================*/
 .wrapper {
 	background: url(../img/page-2__bg.png) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	height: 100vh;
+	padding-bottom: 220px;
+	/* height: 100vh; */
 }
 .content {
 
 }
+/*================================================
+	content-nav
+=================================================*/
 .content-nav {
 	display: flex;
 	justify-content: space-between;
@@ -405,6 +340,7 @@ Form Area
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
 .content__logo {
 
 }
@@ -426,6 +362,12 @@ Form Area
 	/* Text style for "Офіційні п" */
 	color: #fff200;
 }
+
+/*================================================
+	content-body
+=================================================*/
+
+
 .content-card__wrap {
 	position: absolute;
 	left: 0;
@@ -468,7 +410,9 @@ Form Area
 	padding: 25px;
 	border-radius: 10px;
 }
+
 .content-descr {
+	z-index: 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -493,6 +437,11 @@ Form Area
 	color: #fff200;
 	font-size: 35px;
 }
+
+/*================================================
+	content-right__image
+=================================================*/
+
 .content-image {
 	position: absolute;
 	right: 0;
@@ -501,6 +450,8 @@ Form Area
 .content-image img {
 	width: 320px;
 }
+
+
 /*================================================
 Responsive
 =================================================*/
@@ -541,9 +492,31 @@ Responsive
 .footer__descr {
 	font-size: 15px;
 }
+
+.content-image img {
+	width: 250px;
+}
+.content-card__wrap {
+	bottom: 120px;
+}
+.content-image {
+	bottom: 120px;
+}
+.content-descr {
+	margin-top: 350px;
+}
+.content__logo img {
+	max-width: 290px;
+}
+.content-card img {
+  width: 80px;
+}
 }
 /* 768 */
 @media (max-width: 992px) {  
+	.wrapper {
+		padding-bottom: 20px;
+	}
 	.main-area__title span {
     font-size: 55px;
 	}
@@ -580,6 +553,24 @@ Responsive
 	.container {
     margin: 0px 30px auto;
 }
+.content-image img {
+	width: 250px;
+}
+.content-card__wrap {
+	bottom: 120px;
+}
+.content-image {
+	bottom: 120px;
+}
+.content-descr {
+	margin-top: 350px;
+}
+.content__logo img {
+	max-width: 290px;
+}
+.content-card img {
+  width: 80px;
+}
 }
 /* 576  */
 @media (max-width: 768px) { 
@@ -610,6 +601,28 @@ Responsive
 	}
 	.footer__descr {
 		font-size: 13px;
+	}
+	.content-image img {
+		width: 200px;
+	}
+	.content-descr {
+		margin-top: 380px;
+		font-size: 22px;
+	}
+	.content-descr span {
+		font-size: 30px;
+	}
+	.content-card img {
+		width: 70px;
+	}
+	.content-stock {
+    font-size: 16px;
+	}
+	.content__list__item a {
+		font-size: 16px;
+	}
+	.content__btn {
+		font-size: 19px;
 	}
 }
 /* 320 */
@@ -675,5 +688,41 @@ Responsive
 .main-area__logos {
 	margin-bottom: 10px;
 	flex-direction: column;
+}
+.content-stock {
+	font-size: 12px;
+}
+.content__list__item a {
+	font-size: 13px;
+}
+.content__list__item {
+		margin-right: 10px;
+		width: 60px;
+}
+.content-nav {
+	margin-bottom: 15px;
+	padding: 15px 10px 0px 10px;
+}
+.content__logo img {
+	max-width: 210px;
+}
+.content__btn {
+	font-size: 15px;
+	padding: 15px 20px;
+}
+.content-image img {
+	width: 140px;
+}
+.content-card {
+	font-size: 13px;
+}
+.content-descr {
+	font-size: 14px;
+}
+.content-descr span {
+	font-size: 20px;
+}
+.content-card img {
+	width: 60px;
 }
 }
