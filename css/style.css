@@ -382,6 +382,125 @@ Form Area
 	font-family: Arial;
 }
 
+
+.wrapper {
+	background: url(../img/page-2__bg.png) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+}
+.content {
+
+}
+.content-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px 0px 20px;
+}
+.content-stock {
+	text-shadow: 0 5px 5px rgba(25, 23, 28, 0.38);
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.content__logo {
+
+}
+.content__logo img {
+	max-width: 350px;
+}
+.content__list {
+	display: flex;
+}
+.content__list__item {
+	margin-right: 20px;
+}
+.content__list__item:last-child {
+	margin-right: 0px;
+}
+.content__list__item a {
+	font-size: 20px;
+	font-weight: bold;
+	/* Text style for "Офіційні п" */
+	color: #fff200;
+}
+.content-card__wrap {
+	position: absolute;
+	left: 0;
+	bottom: 100px;
+}
+.content-card {	
+	margin-bottom: 10px;
+	padding: 10px 5px 10px 0px;
+	background: #36742c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 16px;
+	border: 2px dashed #b3b3b3;
+	border-left: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.content-card img {
+	width: 100px;
+	margin-right: 10px;
+}
+.content-card__wrap {
+	flex-direction: column;
+}
+.content-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content__btn {
+	margin-top: 30px;
+	box-shadow: 0 0 18px 1px #ffffff;
+	background-color: #fff200;
+	color: #ed1d24;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 25px;
+	border-radius: 10px;
+}
+.content-descr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 120px;
+	background: #6db52f;
+	padding: 10px 40px;
+	text-shadow: 0 6px 12px rgba(25, 23, 28, 0.56);
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 20px;
+}
+.content-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.content-descr span {
+	color: #fff200;
+	font-size: 35px;
+}
+.content-image {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+.content-image img {
+	width: 320px;
+}
 /*================================================
 Responsive
 =================================================*/
@@ -421,6 +540,7 @@ Responsive
 }
 .footer__descr {
 	font-size: 15px;
+}
 }
 /* 768 */
 @media (max-width: 992px) {  
@@ -468,6 +588,9 @@ Responsive
 	}
 	.main-area__title span {
 		font-size: 44px;
+	}
+	.footer__hr {
+		margin-bottom: -10px;
 	}
 	.main-area__title {
     font-size: 22px;
@@ -541,6 +664,7 @@ Responsive
 }
 .footer__social img {
 	width: 25px;
+	margin-bottom: 3px;
 }
 .footer__phone {
 	font-size: 13px;
