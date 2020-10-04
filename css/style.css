@@ -129,7 +129,9 @@ textarea::selection{
 .mb-70 {
   margin-bottom: 70px;
 }
-
+.container {
+	margin: 0px 100px auto;
+}
 /*================================================
 Main Area
 =================================================*/
@@ -215,6 +217,45 @@ Main Area
 }
 .main-area__logos img:last-child {
 	margin-bottom: 0;
+}
+
+
+
+.footer {
+	background: #36742c;
+	padding-bottom: 36px;
+	padding-top: 40px;
+}
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__bottom {
+		
+}
+.footer__social img{
+	width: 100px;
+}
+.footer__phone {
+	color: #ffffff;
+	font-family: "AG Friquer - Roman";
+	font-size: 18px;
+	font-weight: 400;
+}
+.footer__hr {
+	border: none;
+	border-top: 1px solid white;
+}
+.footer__descr {
+	margin-top: 32px;
+	color: #ffffff;
+	font-family: "Times Armenian PSMT";
+	font-size: 17px;
+	text-align: center;
+}
+.footer__descr p {
+
 }
 /*================================================
 Left Instruction
