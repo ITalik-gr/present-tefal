@@ -406,7 +406,7 @@ Footer
 	align-items: center;
 }
 .content__btn {
-	margin-top: 30px;
+	margin-top: 60px;
 	box-shadow: 0 0 18px 1px #ffffff;
 	background-color: #fff200;
 	color: #ed1d24;
@@ -523,7 +523,7 @@ Responsive
 	width: 95px;
 }
 .content__bottom {
-	margin-top: -120px;
+	margin-top: -260px;
 }
 }
 /* 768 */
@@ -738,7 +738,7 @@ Responsive
 	font-size: 19px;
 }
 .content-card img {
-	width: 55px;
+	width: 65px;
   margin-right: 5px;
 }
 }
