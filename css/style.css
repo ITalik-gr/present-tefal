@@ -173,7 +173,7 @@ Main Area
 =================================================*/
 .wrap {
 	min-height: 100vh;
-	margin-top: 170px;
+	margin-top: 140px;
 }
 .main-area {
 	/* background: url('../img/map.png') no-repeat;
@@ -690,8 +690,8 @@ Responsive
 @media (max-width: 768px) { 
 
 	.main-area__main-present img {
-    max-width: 400px;
-	}
+    max-width: 550px;
+}
 	.main-area__title span {
 		font-size: 44px;
 	}
@@ -759,7 +759,7 @@ Responsive
 
 @media (max-width: 576px) { 
 	.wrap {
-    margin-top: 240px;
+    margin-top: 130px;
 }
 .main-area__body {
 	padding-top: 21px;
@@ -768,7 +768,7 @@ Responsive
 	align-items: center;
 	flex-direction: column;
 	z-index: 3;
-	margin-bottom: 80px;
+	margin-bottom: 10px;
 }
 .bg-blick {
 	top: 350px;
@@ -813,7 +813,7 @@ Responsive
 	align-items: center;
 	flex-direction: column;
 	z-index: 3;
-	margin-bottom: -20px;
+	margin-bottom: -110px;
 }
 }
 @media (max-width: 350px) { 
