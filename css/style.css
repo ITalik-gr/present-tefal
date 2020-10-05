@@ -172,6 +172,7 @@ Main Area
 =================================================*/
 .wrap {
 	min-height: 100vh;
+	margin-top: -170px;
 }
 .main-area {
 	/* background: url('../img/map.png') no-repeat;
@@ -187,7 +188,7 @@ Main Area
 }
 .main-area__bg-line {
 	position: absolute;
-	top: 35%;
+	top: 22%;
 	left: 0;
 	z-index: 1;
 	width: 90%;
@@ -348,7 +349,7 @@ Footer
 	/* padding-bottom: 220px; */
 	min-height: 100vh;
 	position: relative;
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 }
 .content {
 
@@ -418,7 +419,7 @@ Footer
 	height: 70px;
 }
 .content-card img {
-	width: 110px;
+	height: 80px;
 	margin-right: 10px;
 }
 .content-card__wrap {
@@ -534,7 +535,9 @@ Responsive
 .footer__descr {
 	font-size: 15px;
 }
-
+.main-area__bg-line {
+	top: 35%;
+}
 .content-image img {
 	width: 300px;
 }
@@ -544,7 +547,7 @@ Responsive
 	bottom: 0;
 }
 .content-card img {
-	width:  95px;
+	height: 71px;
 }
 .content-image {
 	position: absolute;
@@ -556,9 +559,6 @@ Responsive
 }
 .content__logo img {
 	max-width: 290px;
-}
-.content-card img {
-	width: 95px;
 }
 .content-center {
 	margin-bottom: 390px;
@@ -572,7 +572,7 @@ Responsive
 
 @media (max-width: 1080px) {  
 	.content-card img {
-    width: 135px;
+		height: 75px;
 }
 .content-card {
 	height: 85px;
@@ -633,7 +633,7 @@ Responsive
 	max-width: 300px;
 }
 .content-card img {
-  width: 100px;
+	height: 80px;
 }
 .content__bottom {
 	margin-top: -20px;
@@ -682,7 +682,7 @@ Responsive
 		font-size: 30px;
 	}
 	.content-card img {
-    width: 85px;
+    height: 85px;
 }
 	.content-stock {
     font-size: 16px;
@@ -836,7 +836,7 @@ Responsive
 	font-size: 19px;
 }
 .content-card img {
-	width: 65px;
+	height: 53px;
   margin-right: 5px;
 }
 }
