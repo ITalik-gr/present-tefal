@@ -20,10 +20,10 @@ body{
 	margin: 0;
 	padding: 0;
 	position: relative;
-	/* background: url('img/map.png') no-repeat;
+	background: url('../img/bg.png') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center; */
+	background-position: center;
 }
 
 img {
@@ -140,24 +140,44 @@ textarea::selection{
 First page
 =================================================*/
 
-
 /*================================================
-Main Area
+background
 =================================================*/
 .bg-blick {
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	width: 800px;
 }
+.bg-blick div {
+	width: 150px;
+	height: 150px;
+	background: #3a712a;
+	position: absolute;
+  right: 0;
+	top: 10px;
+	filter: blur(50px);
+}
+.bg-blick div:first-child {
+	top: 90px;
+	right: 130px;
+}
+.bg-blick div:last-child {
+	top: 300px;
+	right: 0px;
+}
+
+
+/*================================================
+Main Area
+=================================================*/
 .wrap {
 	min-height: 100vh;
 }
 .main-area {
-	background: url('../img/map.png') no-repeat;
+	/* background: url('../img/map.png') no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
+	background-attachment: fixed; */
+	/* background-position: center; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -321,10 +341,10 @@ Footer
 	Wrapper
 =================================================*/
 .wrapper {
-	background: url(../img/page-2__bg.png) no-repeat;
+	/* background: url(../img/page-2__bg.png) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: center; */
 	/* padding-bottom: 220px; */
 	min-height: 100vh;
 	position: relative;
