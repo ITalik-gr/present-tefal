@@ -173,7 +173,7 @@ Main Area
 =================================================*/
 .wrap {
 	min-height: 100vh;
-	margin-top: -130px;
+	/* margin-top: 60px;	 */
 }
 .main-area {
 	/* background: url('../img/map.png') no-repeat;
@@ -347,8 +347,7 @@ Footer
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center; */
-	/* padding-bottom: 220px; */
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	position: relative;
 	/* padding-bottom: 30px; */
 }
@@ -422,28 +421,24 @@ Footer
 }
 .content-card img {
 	height: 80px;
-	margin-right: 10px;
-	position: relative;
+	margin-right: 10px; 
+	/* position: relative; */
 }
 .content-card img:last-child {
-	margin-right: 30px;
+	/* margin-right: 30px; */
 }
-.content-card:after {
-	/* content: '1'; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	color: #ed1d24;
-	font-family: "AG Friquer - Roman";
-	font-size: 21px;
-	font-weight: bold;
+.content-card__num {
+	position: absolute!important;
+	width: 30px!important;
+	height: 30px!important;
 	top: calc(50% - 15px);
-	right: 0;
-	height: 30px;
-	width: 30px;
-	background-color: #fff200;
-	border-radius: 20px;
+	right: -10px;
+}
+.content-card__image {
+	position: relative;
+}
+.content-card__title {
+	margin-left: 20px;
 }
 .content-card__wrap {
 	flex-direction: column;
@@ -691,9 +686,7 @@ Responsive
 }
 /* 576  */
 @media (max-width: 768px) { 
-	.main-area {
-		height: 60vh;
-	}
+
 	.main-area__main-present img {
     max-width: 400px;
 	}
@@ -751,10 +744,26 @@ Responsive
 		margin-top: -60%;
 		/* position: absolute; */
 	}
+	.wrap {
+    min-height: 100vh;
+    margin-top: -70px;
+}
 }
 @media (max-width: 710px) { 
 	.main-area__main-present img {
 		max-width: 560px;
+	}
+}
+
+@media (max-width: 576px) { 
+	.wrap {
+		min-height: 100vh;
+		margin-top: 70px;
+	}
+	.content-card__num {
+    position: absolute!important;
+    width: 25px!important;
+		height: 25px!important;
 	}
 }
 
@@ -774,12 +783,6 @@ Responsive
 }
 
 }
-@media (max-width: 450px) { 
-	.main-area {
-		height: 40vh;
-	}
-
-}
 @media (max-width: 350px) { 
 	.content-image img {
     width: 135px!important;
@@ -787,7 +790,6 @@ Responsive
 	.content-image {
     margin-bottom: 50px;
 }
-
 }
 /* 320 */
 @media (max-width: 576px)  { 
@@ -897,7 +899,6 @@ Responsive
 	height: 53px;
   margin-right: 5px;
 }
-
 }
 
 @media (max-width: 319px)  { 
