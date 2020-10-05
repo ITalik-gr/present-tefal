@@ -328,6 +328,7 @@ Footer
 	/* padding-bottom: 220px; */
 	min-height: 100vh;
 	position: relative;
+	padding-bottom: 30px;
 }
 .content {
 
@@ -366,7 +367,7 @@ Footer
 .content__list__item a {
 	font-size: 20px;
 	font-weight: bold;
-	/* Text style for "Офіційні п" */
+	white-space: nowrap;
 	color: #fff200;
 }
 
@@ -561,8 +562,8 @@ Responsive
 /* 768 */
 @media (max-width: 992px) {  
 	.wrapper {
-		padding-bottom: 10px;
-		height: 100%;
+    padding-bottom: 170px;
+    height: 100%;
 }
 	.main-area__title span {
     font-size: 55px;
@@ -703,8 +704,8 @@ Responsive
 }
 @media (max-width: 350px) { 
 	.content-image img {
-		width: 155px!important;
-	}
+    width: 135px!important;
+}
 	.content-image {
     margin-bottom: 50px;
 }
@@ -776,14 +777,13 @@ Responsive
 	flex-direction: column;
 }
 .content-stock {
-	font-size: 12px;
+	font-size: 16px;
 }
 .content__list__item a {
-	font-size: 13px;
+	font-size: 16px;
 }
 .content__list__item {
-		margin-right: 10px;
-		width: 60px;
+	margin-right: 10px;
 }
 .content-nav {
 	margin-bottom: 15px;
@@ -800,7 +800,7 @@ Responsive
 	width: 185px;
 }
 .content-card {
-	font-size: 11px;
+	font-size: 16px;
 	height: 50px;
 }
 .content-descr {
