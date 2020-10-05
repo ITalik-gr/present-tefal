@@ -439,6 +439,7 @@ Footer
 }
 .content-card__title {
 	margin-left: 20px;
+	margin-right: 15px;
 }
 .content-card__wrap {
 	flex-direction: column;
