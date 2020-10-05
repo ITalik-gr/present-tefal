@@ -515,12 +515,15 @@ Responsive
 }
 
 .content-image img {
-	width: 250px;
+	width: 300px;
 }
 .content-card__wrap {
 	position: absolute;
 	left: 0;
 	bottom: 0;
+}
+.content-card img {
+	width:  95px;
 }
 .content-image {
 	position: absolute;
@@ -545,6 +548,16 @@ Responsive
 	top: 30%; */
 }
 }
+
+@media (max-width: 1080px) {  
+	.content-card img {
+    width: 135px;
+}
+.content-card {
+	height: 85px;
+}
+}
+
 /* 768 */
 @media (max-width: 992px) {  
 	.wrapper {
