@@ -665,6 +665,31 @@ Responsive
 		/* position: absolute; */
 	}
 }
+
+@media (max-width: 508px) { 
+	.content-center {
+    margin-bottom: 260px;
+}
+
+}
+
+@media (max-width: 400px) { 
+	.content-center {
+    margin-bottom: 260px;
+}
+.content-image img {
+	width: 165px;
+}
+
+}
+@media (max-width: 350px) { 
+	.content-image img {
+		width: 155px!important;
+	}
+	.content-image {
+    margin-bottom: 50px;
+}
+}
 /* 320 */
 @media (max-width: 576px)  { 
 	.main-area__main-present img {
