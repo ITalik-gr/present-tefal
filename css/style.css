@@ -160,10 +160,10 @@ Main Area
 	background-position: center;
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 	position: relative;
 	padding: 0px 110px 60px 110px;
-
+	height: 70vh;
 }
 .main-area__bg-line {
 	position: absolute;
@@ -273,6 +273,7 @@ Footer
 	padding-top: 40px;
 	position: relative;
 	z-index: 3;
+	/* height: 30vh; */
 }
 .footer__top {
 	display: flex;
