@@ -13,6 +13,7 @@ Default CSS
 @font-face {
 	font-family: 'AG Friquer - Roman';
 	src: url(../fonts/agfriquerc.otf);
+	
 }
 
 body{
@@ -158,12 +159,12 @@ background
 	filter: blur(50px);
 }
 .bg-blick div:first-child {
-	top: 90px;
-	right: 130px;
+	top: 170px;
+	right: 280px;
 }
 .bg-blick div:last-child {
-	top: 300px;
-	right: 0px;
+	top: 380px;
+	right: 6px;
 }
 
 
@@ -172,7 +173,7 @@ Main Area
 =================================================*/
 .wrap {
 	min-height: 100vh;
-	margin-top: -170px;
+	margin-top: -130px;
 }
 .main-area {
 	/* background: url('../img/map.png') no-repeat;
@@ -417,10 +418,29 @@ Footer
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	height: 70px;
+	position: relative;
 }
 .content-card img {
 	height: 80px;
 	margin-right: 10px;
+	position: relative;
+}
+.content-card:after {
+	/* content: '1'; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	color: #ed1d24;
+	font-family: "AG Friquer - Roman";
+	font-size: 21px;
+	font-weight: bold;
+	top: calc(50% - 15px);
+	right: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff200;
+	border-radius: 20px;
 }
 .content-card__wrap {
 	flex-direction: column;
@@ -485,10 +505,23 @@ Footer
 =================================================*/
 
 .content-image {
-	/* position: absolute;
-	right: 0;
-	bottom: 0px; */
 	flex: 1;
+}
+.content-image{
+	animation-name: updown;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes updown {
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(20px);
+	}
 }
 .content-image img {
 	width: 320px;
