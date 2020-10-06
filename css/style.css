@@ -173,7 +173,7 @@ Main Area
 =================================================*/
 .wrap {
 	min-height: 100vh;
-	margin-top: 80px;
+	margin-top: 60px;
 }
 .main-area {
 	/* background: url('../img/map.png') no-repeat;
@@ -424,6 +424,9 @@ Footer
 	height: 80px;
 	margin-right: 10px; 
 	/* position: relative; */
+}
+.content-card__image:first-child  {
+	margin-left: 4px;
 }
 .content-card img:last-child {
 	/* margin-right: 30px; */
