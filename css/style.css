@@ -603,6 +603,9 @@ Responsive
 }
 /* 992 */
 @media (max-width: 1200px) { 
+	.content-card {
+		width: 110%;
+	}
 	.main-areaa__bottom__left img {
     height: 65px;
     margin-bottom: 15px;
@@ -687,6 +690,7 @@ Responsive
 
 /* 768 */
 @media (max-width: 992px) {  
+
 	.main-areaa__bottom__left img {
     height: 60px;
     margin-bottom: 15px;
@@ -909,6 +913,9 @@ Responsive
 }
 /* 320 */
 @media (max-width: 576px)  { 
+	.content-card {
+    width: auto;
+}
 	.main-areaa__bottom__left img {
     height: 32px;
     margin-bottom: 5px;
