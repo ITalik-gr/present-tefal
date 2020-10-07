@@ -218,7 +218,7 @@ Main Area
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 80px;
+	margin-top: -150px;
 }
 .main-areaa__bottom__left {
 	display: flex;
@@ -312,7 +312,7 @@ Left-Block
 	margin-bottom: 0;
 }
 .sh-image {
-	height: 115px!important;
+	height: 103px!important;
 }
 
 /*================================================
@@ -579,7 +579,7 @@ Form Area
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	height: 80px;
-	width: 120%;
+	width: 112%;
 	position: relative;
 }
 .content-card img {
@@ -711,7 +711,7 @@ Responsive
     margin-bottom: 15px;
 }
 .main-areaa__bottom {
-	margin-top: 60px;
+	margin-top: -90px;
 }
 }
 /* 992 */
@@ -722,6 +722,9 @@ Responsive
 	.main-areaa__bottom__left img {
     height: 65px;
     margin-bottom: 15px;
+}
+.sh-image {
+	height: 93px!important;
 }
 	.main-area__title span {
 		font-size: 67px;
@@ -813,7 +816,7 @@ Responsive
     display: flex;
     justify-content: space-between;
 		align-items: center;
-		margin-top: 15px;
+		margin-top: 10px;
 }
 	.wrapper {
     padding-bottom: 0px;
@@ -1015,7 +1018,7 @@ Responsive
     margin-bottom: 5px;
 }
 	.sh-image {
-		height: 51px!important;
+    height: 49px!important;
 	}
 	.main-area__main-present img {
     max-width: 100%;
