@@ -12,7 +12,7 @@ Default CSS
 =================================================*/
 @font-face {
 	font-family: 'AG Friquer - Roman';
-	src: url(../fonts/agfriquerc.otf);
+	src: url(../../fonts/agfriquerc.otf);
 	
 }
 
@@ -535,6 +535,42 @@ Form Area
 	text-transform: uppercase;
 }
 
+/* Start Winners-Block */
+.winners-block {
+	position: absolute;
+	border-radius: 15px;
+	height: 300px;
+	width: 350px;
+	background: rgb(243, 243, 243);
+	display: none;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 10px;
+	left: -310px;
+	top: 50px;
+	z-index: 5;
+}
+.winners-block__title {
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "AG Friquer - Roman";
+	margin-bottom: 100px;
+	color: #36742c;
+}
+.winners-block__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.winners-block__list__item {
+	margin-bottom: 10px;
+}
+.winners-block__list__item a {
+	color: #36742c!important;
+}
+
+/* End Winners-Block */
 .content__logo {
 
 }
@@ -546,6 +582,7 @@ Form Area
 }
 .content__list__item {
 	margin-right: 20px;
+	position: relative!important;
 }
 .content__list__item:last-child {
 	margin-right: 0px;
@@ -566,6 +603,7 @@ Form Area
 	flex: 1;
 }
 .content-card {
+	width: 97%;
 	margin-bottom: 10px;
 	padding: 10px 5px 10px 0px;
 	background: #36742c;
@@ -579,12 +617,12 @@ Form Area
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	height: 80px;
-	width: 112%;
+	/* width: 112%; Что бы уменьшить ширину убрал */
 	position: relative;
 }
 .content-card img {
-	height: 100px;
-	margin-right: 10px;
+	height: 93px;
+	margin-right: 2px;
 }
 .content-card__image:first-child {
 	flex-basis: 50%;
@@ -599,12 +637,13 @@ Form Area
 .content-card__image {
 	position: relative;
 	margin-right: 15px;
+	margin-left: 10px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 .content-card__title {
-	margin-right: 12px;
+	/* margin-right: 12px; */
 	flex-basis: 50%;
 	width: 100%;
 }
@@ -767,7 +806,7 @@ Responsive
 	bottom: 0;
 }
 .content-card img {
-	height: 85px;
+	height: 80px;
 }
 .content-image {
 	position: absolute;
@@ -800,7 +839,15 @@ Responsive
 
 /* 768 */
 @media (max-width: 992px) {  
-
+	.winners-block {
+		height: 250px;
+		width: 290px;
+		left: -230px;
+	}
+	.winners-block__title {
+		margin-bottom: 70px;
+		font-size: 29px;
+}
 	.main-areaa__bottom__left img {
     height: 60px;
     margin-bottom: 15px;
@@ -882,6 +929,11 @@ Responsive
 }
 /* 576  */
 @media (max-width: 768px) { 
+	.winners-block {
+    height: 220px;
+    width: 230px;
+    left: -160px;
+}
 	.main-areaa__bottom__left img {
     height: 50px;
     margin-bottom: 10px;
@@ -954,6 +1006,16 @@ Responsive
 }
 
 @media (max-width: 576px) { 
+	.winners-block {
+    height: 190px;
+    width: 230px;
+    left: -150px;
+    top: 30px;
+}
+.winners-block__title {
+	margin-bottom: 40px;
+	font-size: 25px;
+}
 .main-area__body {
 	padding-top: 21px;
 	display: flex;
