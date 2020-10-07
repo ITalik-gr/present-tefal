@@ -208,7 +208,7 @@ Main Area
 }
 .main-areaa__image__present {
 	z-index: 3;
-	width: 85%;
+	width: 75%;
 }
 .main-areaa__line {
 	position: absolute;
@@ -231,7 +231,7 @@ Main Area
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: -150px;
+	margin-top: -270px;
 }
 .main-areaa__bottom__left {
 	display: flex;
@@ -240,11 +240,18 @@ Main Area
 	align-items: center;
 	height: 200px;
 	width: 200px;
+	margin-left: -50px;
 }
 .main-areaa__bottom__left img {
 	/* height: 80px; */
 	width: 100%;
 	margin-bottom: 15px;
+}
+.main-areaa__bottom__right {
+	margin-right: -100px;
+}
+.main-area__atb {
+	margin-top: 90px;
 }
 .main-area__title {
 	display: flex;
@@ -382,7 +389,7 @@ Footer
 	align-items: center;
 }
 .footer__descr p {
-	width: 80%;
+	width: 75%;
 }
 .footer__copy{
 	margin-top: 20px;
@@ -774,6 +781,9 @@ Responsive
 }
 /* 1200 */
 @media (max-width: 1400px) { 
+	.main-area__atb {
+    margin-top: 0px;
+}
 	.main-areaa__bottom__left img {
     /* height: 60px; */
     margin-bottom: 15px;
@@ -781,9 +791,23 @@ Responsive
 .main-areaa__bottom {
 	margin-top: -90px;
 }
+.main-areaa__image__present {
+	z-index: 3;
+	width: 95%;
+}
+.main-areaa__bottom__left {
+	margin-left: -20px;
+}
+.main-areaa__bottom__right {
+	margin-right: 0px;
+}
 }
 /* 992 */
 @media (max-width: 1200px) { 
+	.main-areaa__bottom__left {
+    width: 180px;
+    margin-left: 0px;
+}
 	.content-card {
 		width: 110%;
 	}
@@ -868,6 +892,10 @@ Responsive
 
 /* 768 */
 @media (max-width: 992px) {  
+	.main-areaa__bottom__left {
+    width: 140px;
+    margin-left: 0px;
+}
 	.winners-block {
 		height: 250px;
 		width: 290px;
@@ -949,11 +977,15 @@ Responsive
 	position: relative;
 }
 .footer__descr p {
-	width: 90%;
+	width: 85%;
 }
 }
 /* 576  */
 @media (max-width: 768px) { 
+	.main-areaa__bottom__left {
+    width: 110px;
+    margin-left: 0px;
+}
 	.winners-block {
     height: 220px;
     width: 230px;
@@ -976,7 +1008,7 @@ Responsive
 		margin-bottom: -10px;
 	}
 	.footer__descr p {
-    width: 95%;
+    width: 85%;
 }
 	.main-area__title {
     font-size: 22px;
@@ -1104,6 +1136,7 @@ Responsive
 }
 /* 320 */
 @media (max-width: 576px)  { 
+	
 	.content-card {
     width: auto;
 }
@@ -1201,7 +1234,7 @@ Responsive
 	width: 185px;
 }
 .content-card {
-	font-size: 16px;
+	font-size: 14px;
 	height: 50px;
 }
 .content-descr {
