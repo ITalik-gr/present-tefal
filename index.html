@@ -21,10 +21,14 @@
 
       <ul class="content__list">
         <li class="content__list__item"><a target="_blank" href="https://docs.google.com/document/d/1Erlo8j_oYLp9guRFNzmkgCZsuDZJ6fZUTVlcHkTLcgE/edit">Офіційні правила</a></li>
-				<li class="content__list__item"><a href="#">Переможці</a>
+				<li class="content__list__item"><a href="#" class="ocwin">Переможці</a>
 					
 					<!-- Start Winners-Block -->					
 					<div class="winners-block">
+						<div class="close ocwin">
+							<span></span>
+							<span></span>
+						</div>
 						<div class="winners-block__title">
 							Переможці
 						</div>
@@ -129,7 +133,7 @@
 				</div>
 				<div class="main-areaa__bottom">
 					<div class="main-areaa__bottom__left">
-						<img class="sh-image" src="assets/img/secrets-logo.png" alt="">
+						<img src="assets/img/secrets-logo.png" alt="">
 						<img src="assets/img/svoya-logo.png" alt="">
 					</div>
 					<div class="main-areaa__bottom__right">
@@ -151,12 +155,12 @@
 				</div>
 				<form action="assets/php/formHandler.php" method="POST">
 					<p class="form-title">РЕЄСТРАЦІЯ КОДУ</p>
-					<input type="text" name="name"  placeholder="Вкажіть ім'я та прізвище">
+					<input type="text" name="name"  placeholder="Вкажіть прізвище, ім’я та по батькові">
 					<input class="phone" type="text" name="phone" placeholder="Номер телефону">
 					<input type="text" name="code"  placeholder="Акційний код">
 					<div>
 						<input type="checkbox" id="checkbox1" required name="check">
-						<label for="checkbox1">Я даю згоду на обробку персональних даних</label>
+						<label for="checkbox1">Я даю згоду на обробку <a href="personaldata.html">персональних даних</a></label>
 					</div>
 					<span class="result-text"></span>
 					<button>Зареєструвати код</button>

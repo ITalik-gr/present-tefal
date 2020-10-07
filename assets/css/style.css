@@ -12,7 +12,7 @@ Default CSS
 =================================================*/
 @font-face {
 	font-family: 'AG Friquer - Roman';
-	src: url(../../fonts/agfriquerc.otf);
+	src: url(../fonts/agfriquerc.otf);
 	
 }
 
@@ -167,6 +167,19 @@ background
 	right: 6px;
 }
 
+/*================================================
+Personal Data Page
+=================================================*/
+.text-area{
+	width: calc(60% - 40px);
+	margin: 30px auto;
+	padding: 30px 20px;
+	border-radius: 15px;
+	background: white;
+	border: 1px solid #222;
+	font-family: 'AG Friquer - Roman';
+	font-size: 14px;
+}
 
 /*================================================
 Main Area
@@ -191,7 +204,7 @@ Main Area
 	position: relative;
 	justify-content: center;
 	align-items: center;
-  display: flex;
+  	display: flex;
 }
 .main-areaa__image__present {
 	z-index: 3;
@@ -225,9 +238,12 @@ Main Area
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 200px;
+	width: 200px;
 }
 .main-areaa__bottom__left img {
-	height: 80px;
+	/* height: 80px; */
+	width: 100%;
 	margin-bottom: 15px;
 }
 .main-area__title {
@@ -411,32 +427,6 @@ Form Area
 	background: #fafafa;
 }
 
-.form-area .form-block .close{
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	z-index: 100;
-	cursor: pointer;
-}
-
-.form-area .form-block .close span{
-	position: absolute;
-	width: 30px;
-	height: 3px;
-	background: #484848;
-	border-radius: 3px;
-}
-
-.form-area .form-block .close span:nth-child(1){
-	transform: rotate(45deg) translate(10px, 10px);
-}
-
-.form-area .form-block .close span:nth-child(2){
-	transform: rotate(-45deg) translate(-10px, 10px);
-}
-
 .form-area .form-block form{
 	display: flex;
 	flex-direction: column;
@@ -503,6 +493,13 @@ Form Area
 	color: black;
 }
 
+.form-area .form-block form label a{
+	font-family: Arial;
+	font-size: 14px;
+	color: blue;
+	text-decoration: underline;
+}
+
 .result-text{
 	font-size: 14px;
 	color: red;
@@ -519,6 +516,36 @@ Form Area
 .content {
 
 }
+
+/*================================================
+Close button
+=================================================*/
+.close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.close span{
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background: #484848;
+	border-radius: 3px;
+}
+
+.close span:nth-child(1){
+	transform: rotate(45deg) translate(10px, 10px);
+}
+
+.close span:nth-child(2){
+	transform: rotate(-45deg) translate(-10px, 10px);
+}
+
 /*================================================
 	content-nav
 =================================================*/
@@ -542,7 +569,9 @@ Form Area
 	height: 300px;
 	width: 350px;
 	background: rgb(243, 243, 243);
-	display: flex;
+	display: none;
+	opacity: 0;
+	transition: .2s;
 	align-items: center;
 	flex-direction: column;
 	padding: 20px 10px;
@@ -611,17 +640,17 @@ Form Area
 	justify-content: flex-end;
 	align-items: center;
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 18px;
 	border: 2px dashed #b3b3b3;
 	border-left: none;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	height: 80px;
+	height: 90px;
 	/* width: 112%; Что бы уменьшить ширину убрал */
 	position: relative;
 }
 .content-card img {
-	height: 93px;
+	height: 100px;
 	margin-right: 2px;
 }
 .content-card__image:first-child {
@@ -677,10 +706,11 @@ Form Area
 	flex-direction: column;
 	margin-top: 120px;
 	background: #6db52f;
-	padding: 30px 70px;
+	padding: 30px 65px;
 	text-shadow: 0 6px 12px rgba(25, 23, 28, 0.56);
 	color: #ffffff;
-	font-size: 35px;
+	font-size: 34px;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
 	border-radius: 20px;
@@ -691,7 +721,7 @@ Form Area
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	flex: 3;
+	flex: 2;
 }
 .content-descr span {
 	color: #fff200;
@@ -704,7 +734,6 @@ Form Area
 .content-image {
 	flex: 1;
 	position: relative;
-	height: 100%;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -746,7 +775,7 @@ Responsive
 /* 1200 */
 @media (max-width: 1400px) { 
 	.main-areaa__bottom__left img {
-    height: 60px;
+    /* height: 60px; */
     margin-bottom: 15px;
 }
 .main-areaa__bottom {
@@ -759,7 +788,7 @@ Responsive
 		width: 110%;
 	}
 	.main-areaa__bottom__left img {
-    height: 65px;
+    /* height: 65px; */
     margin-bottom: 15px;
 }
 .sh-image {
@@ -849,15 +878,11 @@ Responsive
 		font-size: 29px;
 }
 	.main-areaa__bottom__left img {
-    height: 60px;
+    /* height: 60px; */
     margin-bottom: 15px;
 }
 	.main-area {
     padding: 0px 20px 60px 30px;
-}
-	.main-areaa__bottom__left img {
-    height: 70px;
-    margin-bottom: 15px;
 }
 	.main-areaa__bottom {
     display: flex;
@@ -906,7 +931,7 @@ Responsive
     margin: 0px 30px auto;
 }
 .content-image img {
-	width: 260px;
+	width: 290px;
 }
 
 .content-descr {
@@ -935,7 +960,7 @@ Responsive
     left: -160px;
 }
 	.main-areaa__bottom__left img {
-    height: 50px;
+    /* height: 50px; */
     margin-bottom: 10px;
 }
 .sh-image {
@@ -974,8 +999,8 @@ Responsive
 	}
 	
 	.content-image img {
-		width: 220px;
-	}
+    width: 250px;
+}
 	.content-descr {
     margin-top: 30px;
     font-size: 22px;
@@ -1033,6 +1058,13 @@ Responsive
     width: 25px!important;
 		height: 25px!important;
 	}
+
+	.text-area{
+		width: calc(90% - 20px);
+		margin: 30px auto;
+		padding: 20px 10px;
+		min-width: 310px;
+	}
 }
 
 @media (max-width: 508px) { 
@@ -1076,7 +1108,7 @@ Responsive
     width: auto;
 }
 	.main-areaa__bottom__left img {
-    height: 32px;
+    /* height: 32px; */
     margin-bottom: 5px;
 }
 	.sh-image {
