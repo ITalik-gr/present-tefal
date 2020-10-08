@@ -247,6 +247,10 @@ Main Area
 	width: 100%;
 	margin-bottom: 15px;
 }
+.svoya {
+	width: 80%!important;
+}
+
 .main-areaa__bottom__right {
 	margin-right: -100px;
 }
@@ -393,10 +397,12 @@ Footer
 }
 .footer__copy{
 	margin-top: 20px;
-	font-family: Arial;
 	color: #ffffff;
 	font-size: 16px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer__copy img{
 	margin-top: 5px;
