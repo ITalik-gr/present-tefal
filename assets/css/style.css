@@ -212,8 +212,8 @@ Main Area
 }
 .main-areaa__line {
 	position: absolute;
-	left: -15px;
-	bottom: 10px;
+	left: -37px;
+	bottom: 20px;
 	z-index: -1;
 }
 /* .main-area__bg-line {
@@ -722,6 +722,7 @@ Close button
 	text-transform: uppercase;
 	border-radius: 20px;
 	margin-bottom: 100px;
+	cursor: pointer;
 }
 .content-center {
 	display: flex;
